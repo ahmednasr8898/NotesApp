@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choose Color View Controller-->
+        <scene sceneID="0TA-bt-DSp">
+            <objects>
+                <viewController storyboardIdentifier="ChooseColorViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="gPo-vL-Zgp" customClass="ChooseColorViewController" customModule="NotesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AmL-Ue-bnT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JmA-hb-BTx">
+                                <rect key="frame" x="52" y="313.5" width="310.5" height="269"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="w3c-QM-LCu">
+                                        <rect key="frame" x="12" y="12" width="286.5" height="245"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dPh-r8-jFd">
+                                                <rect key="frame" x="0.0" y="0.0" width="286.5" height="77.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44q-Rt-1LE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="77.5"/>
+                                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                        <connections>
+                                                            <action selector="redColorOnClick:" destination="gPo-vL-Zgp" eventType="touchUpInside" id="AZI-U9-poD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUm-uH-ye0">
+                                                        <rect key="frame" x="98" y="0.0" width="90" height="77.5"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <connections>
+                                                            <action selector="orangeColorOnClick:" destination="gPo-vL-Zgp" eventType="touchUpInside" id="KSA-h9-Mjv"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTW-uZ-4fU">
+                                                        <rect key="frame" x="196" y="0.0" width="90.5" height="77.5"/>
+                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                        <connections>
+                                                            <action selector="yellowColorOnClick:" destination="gPo-vL-Zgp" eventType="touchUpInside" id="ST8-jb-44e"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vVA-kP-mGw">
+                                                <rect key="frame" x="0.0" y="83.5" width="286.5" height="78"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpz-Z5-BAg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="78"/>
+                                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                        <connections>
+                                                            <action selector="greenColorOnClick:" destination="gPo-vL-Zgp" eventType="touchUpInside" id="2t5-nf-j6a"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEi-r4-Ie7">
+                                                        <rect key="frame" x="98" y="0.0" width="90" height="78"/>
+                                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                        <connections>
+                                                            <action selector="blueColorOnClick:" destination="gPo-vL-Zgp" eventType="touchUpInside" id="a9Q-rA-MIw"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lcz-g1-Bqi">
+                                                        <rect key="frame" x="196" y="0.0" width="90.5" height="78"/>
+                                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                        <connections>
+                                                            <action selector="purpleColorOnClick:" destination="gPo-vL-Zgp" eventType="touchUpInside" id="sxg-Oz-lzW"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1nN-6i-63O">
+                                                <rect key="frame" x="0.0" y="167.5" width="286.5" height="77.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hw5-ar-3Jc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="77.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="whiteColorOnClick:" destination="gPo-vL-Zgp" eventType="touchUpInside" id="T9j-HC-Gkn"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8D-vQ-kao">
+                                                        <rect key="frame" x="98" y="0.0" width="90" height="77.5"/>
+                                                        <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <connections>
+                                                            <action selector="brownColorOnClick:" destination="gPo-vL-Zgp" eventType="touchUpInside" id="MC5-Vj-nGe"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcG-Dp-JhM">
+                                                        <rect key="frame" x="196" y="0.0" width="90.5" height="77.5"/>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <action selector="grayColorOnClick:" destination="gPo-vL-Zgp" eventType="touchUpInside" id="2p4-aY-3al"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstItem="w3c-QM-LCu" firstAttribute="top" secondItem="JmA-hb-BTx" secondAttribute="top" constant="12" id="JYv-zf-ZAv"/>
+                                    <constraint firstItem="w3c-QM-LCu" firstAttribute="leading" secondItem="JmA-hb-BTx" secondAttribute="leading" constant="12" id="NcD-4Q-gIR"/>
+                                    <constraint firstAttribute="bottom" secondItem="w3c-QM-LCu" secondAttribute="bottom" constant="12" id="aJY-AI-Ufg"/>
+                                    <constraint firstAttribute="trailing" secondItem="w3c-QM-LCu" secondAttribute="trailing" constant="12" id="pjg-Xk-qW6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tqL-gN-e3A"/>
+                        <color key="backgroundColor" white="1" alpha="0.36970248287671231" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JmA-hb-BTx" firstAttribute="height" secondItem="AmL-Ue-bnT" secondAttribute="height" multiplier="0.3" id="0uc-yO-Oq8"/>
+                            <constraint firstItem="JmA-hb-BTx" firstAttribute="width" secondItem="AmL-Ue-bnT" secondAttribute="width" multiplier="0.75" id="L2H-ed-wMk"/>
+                            <constraint firstItem="JmA-hb-BTx" firstAttribute="centerX" secondItem="AmL-Ue-bnT" secondAttribute="centerX" id="ZMn-8H-mkK"/>
+                            <constraint firstItem="JmA-hb-BTx" firstAttribute="centerY" secondItem="AmL-Ue-bnT" secondAttribute="centerY" id="jGP-I0-R0f"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="euS-7Z-pr9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="155" y="103"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -9,23 +9,35 @@
 /* Begin PBXBuildFile section */
 		79510D8E25B231FF00A45A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79510D8D25B231FF00A45A2E /* AppDelegate.swift */; };
 		79510D9025B231FF00A45A2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79510D8F25B231FF00A45A2E /* SceneDelegate.swift */; };
-		79510D9225B231FF00A45A2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79510D9125B231FF00A45A2E /* ViewController.swift */; };
+		79510D9225B231FF00A45A2E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79510D9125B231FF00A45A2E /* HomeViewController.swift */; };
 		79510D9525B231FF00A45A2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79510D9325B231FF00A45A2E /* Main.storyboard */; };
 		79510D9825B231FF00A45A2E /* NotesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79510D9625B231FF00A45A2E /* NotesApp.xcdatamodeld */; };
 		79510D9A25B2320100A45A2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79510D9925B2320100A45A2E /* Assets.xcassets */; };
 		79510D9D25B2320100A45A2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79510D9B25B2320100A45A2E /* LaunchScreen.storyboard */; };
+		79510DB825B233F600A45A2E /* AddNote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79510DB725B233F600A45A2E /* AddNote.storyboard */; };
+		79510DBB25B2340E00A45A2E /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79510DBA25B2340E00A45A2E /* AddNoteViewController.swift */; };
+		79510DBE25B235D500A45A2E /* AddNoteViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79510DBD25B235D500A45A2E /* AddNoteViewController+extension.swift */; };
+		79510DC225B2394000A45A2E /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79510DC125B2394000A45A2E /* UIViewController+extension.swift */; };
+		79510DCB25B2419000A45A2E /* ChooseColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79510DCA25B2419000A45A2E /* ChooseColorViewController.swift */; };
+		79510DCF25B241AA00A45A2E /* ChooseColor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79510DCE25B241AA00A45A2E /* ChooseColor.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		79510D8A25B231FE00A45A2E /* NotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79510D8D25B231FF00A45A2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79510D8F25B231FF00A45A2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		79510D9125B231FF00A45A2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79510D9125B231FF00A45A2E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		79510D9425B231FF00A45A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79510D9725B231FF00A45A2E /* NotesApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotesApp.xcdatamodel; sourceTree = "<group>"; };
 		79510D9925B2320100A45A2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79510D9C25B2320100A45A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79510D9E25B2320100A45A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79510DB725B233F600A45A2E /* AddNote.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddNote.storyboard; sourceTree = "<group>"; };
+		79510DBA25B2340E00A45A2E /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		79510DBD25B235D500A45A2E /* AddNoteViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddNoteViewController+extension.swift"; sourceTree = "<group>"; };
+		79510DC125B2394000A45A2E /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
+		79510DCA25B2419000A45A2E /* ChooseColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseColorViewController.swift; sourceTree = "<group>"; };
+		79510DCE25B241AA00A45A2E /* ChooseColor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseColor.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +70,102 @@
 		79510D8C25B231FE00A45A2E /* NotesApp */ = {
 			isa = PBXGroup;
 			children = (
+				79510DAD25B2336A00A45A2E /* Mvvm */,
+				79510DC025B2392000A45A2E /* Extension */,
+				79510DAC25B2334F00A45A2E /* Utils */,
+				79510DAB25B2333A00A45A2E /* Delegate */,
+			);
+			path = NotesApp;
+			sourceTree = "<group>";
+		};
+		79510DAB25B2333A00A45A2E /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
 				79510D8D25B231FF00A45A2E /* AppDelegate.swift */,
 				79510D8F25B231FF00A45A2E /* SceneDelegate.swift */,
-				79510D9125B231FF00A45A2E /* ViewController.swift */,
-				79510D9325B231FF00A45A2E /* Main.storyboard */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		79510DAC25B2334F00A45A2E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
 				79510D9925B2320100A45A2E /* Assets.xcassets */,
 				79510D9B25B2320100A45A2E /* LaunchScreen.storyboard */,
 				79510D9E25B2320100A45A2E /* Info.plist */,
 				79510D9625B231FF00A45A2E /* NotesApp.xcdatamodeld */,
 			);
-			path = NotesApp;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		79510DAD25B2336A00A45A2E /* Mvvm */ = {
+			isa = PBXGroup;
+			children = (
+				79510DB025B2338300A45A2E /* Model */,
+				79510DAF25B2337D00A45A2E /* View */,
+				79510DAE25B2337400A45A2E /* ViewModel */,
+			);
+			path = Mvvm;
+			sourceTree = "<group>";
+		};
+		79510DAE25B2337400A45A2E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		79510DAF25B2337D00A45A2E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79510DC925B2416E00A45A2E /* ChooseColorForNote */,
+				79510DB625B233E400A45A2E /* AddNote */,
+				79510DB325B233AC00A45A2E /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		79510DB025B2338300A45A2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79510DB325B233AC00A45A2E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				79510D9125B231FF00A45A2E /* HomeViewController.swift */,
+				79510D9325B231FF00A45A2E /* Main.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		79510DB625B233E400A45A2E /* AddNote */ = {
+			isa = PBXGroup;
+			children = (
+				79510DB725B233F600A45A2E /* AddNote.storyboard */,
+				79510DBA25B2340E00A45A2E /* AddNoteViewController.swift */,
+				79510DBD25B235D500A45A2E /* AddNoteViewController+extension.swift */,
+			);
+			path = AddNote;
+			sourceTree = "<group>";
+		};
+		79510DC025B2392000A45A2E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				79510DC125B2394000A45A2E /* UIViewController+extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		79510DC925B2416E00A45A2E /* ChooseColorForNote */ = {
+			isa = PBXGroup;
+			children = (
+				79510DCA25B2419000A45A2E /* ChooseColorViewController.swift */,
+				79510DCE25B241AA00A45A2E /* ChooseColor.storyboard */,
+			);
+			path = ChooseColorForNote;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +225,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79510DB825B233F600A45A2E /* AddNote.storyboard in Resources */,
 				79510D9D25B2320100A45A2E /* LaunchScreen.storyboard in Resources */,
 				79510D9A25B2320100A45A2E /* Assets.xcassets in Resources */,
+				79510DCF25B241AA00A45A2E /* ChooseColor.storyboard in Resources */,
 				79510D9525B231FF00A45A2E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,9 +240,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79510D9225B231FF00A45A2E /* ViewController.swift in Sources */,
+				79510D9225B231FF00A45A2E /* HomeViewController.swift in Sources */,
+				79510DCB25B2419000A45A2E /* ChooseColorViewController.swift in Sources */,
 				79510D8E25B231FF00A45A2E /* AppDelegate.swift in Sources */,
+				79510DC225B2394000A45A2E /* UIViewController+extension.swift in Sources */,
+				79510DBE25B235D500A45A2E /* AddNoteViewController+extension.swift in Sources */,
 				79510D9025B231FF00A45A2E /* SceneDelegate.swift in Sources */,
+				79510DBB25B2340E00A45A2E /* AddNoteViewController.swift in Sources */,
 				79510D9825B231FF00A45A2E /* NotesApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +396,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5Y442FJFB;
-				INFOPLIST_FILE = NotesApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NotesApp/Utils/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +415,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5Y442FJFB;
-				INFOPLIST_FILE = NotesApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NotesApp/Utils/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
