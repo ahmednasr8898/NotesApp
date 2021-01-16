@@ -55,6 +55,7 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addNewNoteButton" destination="dNl-7n-Z4c" id="sZb-xe-4Mv"/>
                         <outlet property="bodyTextView" destination="hrf-Yg-aFC" id="yRY-hS-jFN"/>
                         <outlet property="titleTextField" destination="B2i-pT-zrU" id="LYb-dT-Ieg"/>
                     </connections>

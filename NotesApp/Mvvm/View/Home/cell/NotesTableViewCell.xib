@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="NotesTableViewCell" customModule="NotesApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="422" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esn-lC-z8z">
+                        <rect key="frame" x="8" y="8" width="406" height="74"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHc-MH-EnK">
+                                <rect key="frame" x="8" y="8" width="162.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20/3/2021" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvv-MI-EL6">
+                                <rect key="frame" x="235.5" y="45" width="162.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mvv-MI-EL6" secondAttribute="trailing" constant="8" id="1xa-B6-DSS"/>
+                            <constraint firstItem="mvv-MI-EL6" firstAttribute="width" secondItem="esn-lC-z8z" secondAttribute="width" multiplier="0.4" id="3mu-du-FGy"/>
+                            <constraint firstItem="FHc-MH-EnK" firstAttribute="width" secondItem="esn-lC-z8z" secondAttribute="width" multiplier="0.4" id="ASF-ip-hgy"/>
+                            <constraint firstItem="FHc-MH-EnK" firstAttribute="leading" secondItem="esn-lC-z8z" secondAttribute="leading" constant="8" id="FfM-iC-459"/>
+                            <constraint firstItem="FHc-MH-EnK" firstAttribute="top" secondItem="esn-lC-z8z" secondAttribute="top" constant="8" id="Ppr-d7-VYm"/>
+                            <constraint firstAttribute="bottom" secondItem="mvv-MI-EL6" secondAttribute="bottom" constant="8" id="ZNL-Hf-N1m"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="esn-lC-z8z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="UIb-Nd-tEi"/>
+                    <constraint firstAttribute="trailing" secondItem="esn-lC-z8z" secondAttribute="trailing" constant="8" id="UZV-Fq-euo"/>
+                    <constraint firstItem="esn-lC-z8z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="bZp-7a-k62"/>
+                    <constraint firstAttribute="bottom" secondItem="esn-lC-z8z" secondAttribute="bottom" constant="8" id="nkz-aE-2TH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="mvv-MI-EL6" id="Ffl-dQ-x1U"/>
+                <outlet property="itemView" destination="esn-lC-z8z" id="xbd-cK-QoJ"/>
+                <outlet property="titleLabel" destination="FHc-MH-EnK" id="lkz-OT-Fe0"/>
+            </connections>
+            <point key="canvasLocation" x="120.28985507246378" y="65.625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
