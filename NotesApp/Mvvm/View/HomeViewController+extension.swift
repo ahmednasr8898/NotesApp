@@ -10,8 +10,7 @@ extension HomeViewController{
     func setUpNavigationController(){
         title = "Note"
         //add searchBar in navigationController
-        let searchBar = UISearchController(searchResultsController: nil)
-        navigationItem.searchController = searchBar
+        
         //add right bar button item (add new note)
         let addBarButton = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(goToAddNewNote(sender:)))
         navigationItem.rightBarButtonItem = addBarButton

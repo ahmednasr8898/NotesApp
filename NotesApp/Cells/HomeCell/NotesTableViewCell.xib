@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,26 +20,26 @@
                         <rect key="frame" x="8" y="8" width="406" height="74"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHc-MH-EnK">
-                                <rect key="frame" x="8" y="8" width="162.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="8" y="26.5" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20/3/2021" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvv-MI-EL6">
-                                <rect key="frame" x="235.5" y="45" width="162.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="235.5" y="46.5" width="162.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="mvv-MI-EL6" secondAttribute="trailing" constant="8" id="1xa-B6-DSS"/>
                             <constraint firstItem="mvv-MI-EL6" firstAttribute="width" secondItem="esn-lC-z8z" secondAttribute="width" multiplier="0.4" id="3mu-du-FGy"/>
-                            <constraint firstItem="FHc-MH-EnK" firstAttribute="width" secondItem="esn-lC-z8z" secondAttribute="width" multiplier="0.4" id="ASF-ip-hgy"/>
-                            <constraint firstItem="FHc-MH-EnK" firstAttribute="leading" secondItem="esn-lC-z8z" secondAttribute="leading" constant="8" id="FfM-iC-459"/>
-                            <constraint firstItem="FHc-MH-EnK" firstAttribute="top" secondItem="esn-lC-z8z" secondAttribute="top" constant="8" id="Ppr-d7-VYm"/>
+                            <constraint firstItem="FHc-MH-EnK" firstAttribute="leading" secondItem="esn-lC-z8z" secondAttribute="leading" constant="8" id="PKh-Rl-O5l"/>
                             <constraint firstAttribute="bottom" secondItem="mvv-MI-EL6" secondAttribute="bottom" constant="8" id="ZNL-Hf-N1m"/>
+                            <constraint firstItem="FHc-MH-EnK" firstAttribute="width" secondItem="esn-lC-z8z" secondAttribute="width" multiplier="0.5" id="gqY-87-l7y"/>
+                            <constraint firstItem="FHc-MH-EnK" firstAttribute="centerY" secondItem="esn-lC-z8z" secondAttribute="centerY" id="sXy-tM-c8P"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -60,9 +59,4 @@
             <point key="canvasLocation" x="120.28985507246378" y="65.625"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

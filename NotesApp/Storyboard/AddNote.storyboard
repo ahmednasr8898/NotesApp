@@ -45,9 +45,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="Iyw-CI-ao8">
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" image="trash" catalog="system" id="uhF-xS-zTo"/>
-                            <barButtonItem image="doc.badge.plus" catalog="system" id="dNl-7n-Z4c"/>
-                            <barButtonItem image="paintpalette" catalog="system" id="iWi-TJ-GUE">
+                            <barButtonItem title="Item" image="trash.fill" catalog="system" id="uhF-xS-zTo"/>
+                            <barButtonItem image="doc.badge.plus" catalog="system" id="dNl-7n-Z4c">
+                                <connections>
+                                    <action selector="AddNewNoteOnClick:" destination="CCS-b3-TwS" id="0Mt-j0-IN5"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="paintpalette.fill" catalog="system" id="iWi-TJ-GUE">
                                 <connections>
                                     <action selector="chooseNoteColorOnClick:" destination="CCS-b3-TwS" id="NPd-NE-Lyn"/>
                                 </connections>
@@ -57,6 +61,7 @@
                     <connections>
                         <outlet property="addNewNoteButton" destination="dNl-7n-Z4c" id="sZb-xe-4Mv"/>
                         <outlet property="bodyTextView" destination="hrf-Yg-aFC" id="yRY-hS-jFN"/>
+                        <outlet property="chooseButton" destination="iWi-TJ-GUE" id="B5W-y2-z67"/>
                         <outlet property="titleTextField" destination="B2i-pT-zrU" id="LYb-dT-Ieg"/>
                     </connections>
                 </viewController>
@@ -85,8 +90,8 @@
     </scenes>
     <resources>
         <image name="doc.badge.plus" catalog="system" width="119" height="128"/>
-        <image name="paintpalette" catalog="system" width="128" height="105"/>
-        <image name="trash" catalog="system" width="121" height="128"/>
+        <image name="paintpalette.fill" catalog="system" width="128" height="105"/>
+        <image name="trash.fill" catalog="system" width="121" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -100,7 +100,9 @@
 		79510D8C25B231FE00A45A2E /* NotesApp */ = {
 			isa = PBXGroup;
 			children = (
-				79510DAD25B2336A00A45A2E /* Mvvm */,
+				798CCAAF25B8F06C0068F686 /* Mvvm */,
+				798CCAB425B8F13D0068F686 /* Storyboard */,
+				798CCAB525B8F16C0068F686 /* Cells */,
 				79510DC025B2392000A45A2E /* Extension */,
 				79510DAC25B2334F00A45A2E /* Utils */,
 				79510DAB25B2333A00A45A2E /* Delegate */,
@@ -128,64 +130,6 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		79510DAD25B2336A00A45A2E /* Mvvm */ = {
-			isa = PBXGroup;
-			children = (
-				79510DB025B2338300A45A2E /* Model */,
-				79510DAF25B2337D00A45A2E /* View */,
-				79510DAE25B2337400A45A2E /* ViewModel */,
-			);
-			path = Mvvm;
-			sourceTree = "<group>";
-		};
-		79510DAE25B2337400A45A2E /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				79510DE925B2662B00A45A2E /* HomeViewModel */,
-				79510DE425B255B700A45A2E /* AddNoteViewModel */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		79510DAF25B2337D00A45A2E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				79510DC925B2416E00A45A2E /* ChooseColorForNote */,
-				79510DB625B233E400A45A2E /* AddNote */,
-				79510DB325B233AC00A45A2E /* Home */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		79510DB025B2338300A45A2E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				79510DD625B254EC00A45A2E /* NoteModel */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		79510DB325B233AC00A45A2E /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				79510DF125B26C0B00A45A2E /* cell */,
-				79510D9125B231FF00A45A2E /* HomeViewController.swift */,
-				79510D9325B231FF00A45A2E /* Main.storyboard */,
-				79510DEE25B2681500A45A2E /* HomeViewController+extension.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		79510DB625B233E400A45A2E /* AddNote */ = {
-			isa = PBXGroup;
-			children = (
-				79510DB725B233F600A45A2E /* AddNote.storyboard */,
-				79510DBA25B2340E00A45A2E /* AddNoteViewController.swift */,
-				79510DBD25B235D500A45A2E /* AddNoteViewController+extension.swift */,
-			);
-			path = AddNote;
-			sourceTree = "<group>";
-		};
 		79510DC025B2392000A45A2E /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,47 +138,71 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		79510DC925B2416E00A45A2E /* ChooseColorForNote */ = {
+		798CCAAF25B8F06C0068F686 /* Mvvm */ = {
 			isa = PBXGroup;
 			children = (
-				79510DCA25B2419000A45A2E /* ChooseColorViewController.swift */,
-				79510DCE25B241AA00A45A2E /* ChooseColor.storyboard */,
+				798CCAB225B8F0800068F686 /* Model */,
+				798CCAB125B8F07A0068F686 /* View */,
+				798CCAB025B8F0720068F686 /* ViewModel */,
 			);
-			path = ChooseColorForNote;
+			path = Mvvm;
 			sourceTree = "<group>";
 		};
-		79510DD625B254EC00A45A2E /* NoteModel */ = {
+		798CCAB025B8F0720068F686 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				79510DE525B255CD00A45A2E /* AddNoteViewModel.swift */,
+				79510DEA25B2663D00A45A2E /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		798CCAB125B8F07A0068F686 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79510D9125B231FF00A45A2E /* HomeViewController.swift */,
+				79510DEE25B2681500A45A2E /* HomeViewController+extension.swift */,
+				79510DBA25B2340E00A45A2E /* AddNoteViewController.swift */,
+				79510DBD25B235D500A45A2E /* AddNoteViewController+extension.swift */,
+				79510DCA25B2419000A45A2E /* ChooseColorViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		798CCAB225B8F0800068F686 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				79510DE025B2557F00A45A2E /* NoteModel+CoreDataProperties copy.swift */,
 				79510DDF25B2557E00A45A2E /* NoteModel+CoreDataClass copy.swift */,
 			);
-			path = NoteModel;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		79510DE425B255B700A45A2E /* AddNoteViewModel */ = {
+		798CCAB425B8F13D0068F686 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				79510DE525B255CD00A45A2E /* AddNoteViewModel.swift */,
+				79510D9325B231FF00A45A2E /* Main.storyboard */,
+				79510DB725B233F600A45A2E /* AddNote.storyboard */,
+				79510DCE25B241AA00A45A2E /* ChooseColor.storyboard */,
 			);
-			path = AddNoteViewModel;
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		79510DE925B2662B00A45A2E /* HomeViewModel */ = {
+		798CCAB525B8F16C0068F686 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				79510DEA25B2663D00A45A2E /* HomeViewModel.swift */,
+				798CCAB625B8F1730068F686 /* HomeCell */,
 			);
-			path = HomeViewModel;
+			path = Cells;
 			sourceTree = "<group>";
 		};
-		79510DF125B26C0B00A45A2E /* cell */ = {
+		798CCAB625B8F1730068F686 /* HomeCell */ = {
 			isa = PBXGroup;
 			children = (
-				79510DF225B26C2B00A45A2E /* NotesTableViewCell.swift */,
 				79510DF325B26C2B00A45A2E /* NotesTableViewCell.xib */,
+				79510DF225B26C2B00A45A2E /* NotesTableViewCell.swift */,
 			);
-			path = cell;
+			path = HomeCell;
 			sourceTree = "<group>";
 		};
 		CDA2A4495519ECE0CB8A1785 /* Frameworks */ = {
@@ -256,7 +224,7 @@
 				79510D8625B231FE00A45A2E /* Sources */,
 				79510D8725B231FE00A45A2E /* Frameworks */,
 				79510D8825B231FE00A45A2E /* Resources */,
-				F084EED8787D5A1DD4960845 /* [CP] Embed Pods Frameworks */,
+				0179CF1FE02933793A62BEBB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -316,6 +284,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0179CF1FE02933793A62BEBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotesApp/Pods-NotesApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotesApp/Pods-NotesApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotesApp/Pods-NotesApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		17FEAB80B5D49F5F88E1E5CD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -336,23 +321,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F084EED8787D5A1DD4960845 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NotesApp/Pods-NotesApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NotesApp/Pods-NotesApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotesApp/Pods-NotesApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
