@@ -103,6 +103,13 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
         addToFav.image = UIImage(systemName: "heart")
         return UISwipeActionsConfiguration(actions: [delete,addToFav])
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = UIStoryboard(name: "AddNote", bundle: nil).instantiateViewController(withIdentifier: "AddNoteViewController") as! AddNoteViewController
+        vc.checkIsEnabelToEdit = true
+        vc.noteIndex = indexPath.row
+        vc.selectNote = self.arrOfNotes[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 extension HomeViewController: UISearchBarDelegate, UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController) {

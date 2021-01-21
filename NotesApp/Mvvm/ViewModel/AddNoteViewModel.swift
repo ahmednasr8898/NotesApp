@@ -21,4 +21,25 @@ class AddNoteViewModel {
             complation(false)
         }
     }
+    func deleteNote(noteSelected: NoteModel, complation: @escaping(Bool)-> Void){
+        context.delete(noteSelected)
+        do{
+            try context.save()
+            complation(true)
+        }catch{
+            complation(false)
+        }
+    }
+    func editNote(selectedNote: NoteModel ,titleNote: String,bodyNote: String,colorNote: String,dateNote: String, complation: @escaping(Bool)-> Void){
+        selectedNote.titleNote = titleNote
+        selectedNote.bodyNote = bodyNote
+        selectedNote.colorNote = colorNote
+        selectedNote.dateNote = dateNote
+        do {
+            try context.save()
+            complation(true)
+        } catch{
+            complation(false)
+        }
+    }
 }
