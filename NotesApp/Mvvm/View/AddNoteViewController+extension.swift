@@ -30,7 +30,7 @@ extension AddNoteViewController: UITextViewDelegate{
         if textView.text == "" {
             textView.text = "Note..."
             textView.textColor = UIColor.lightGray
-            textView.font = UIFont.systemFont(ofSize: 13)
+            textView.font = UIFont.systemFont(ofSize: 16)
         }
     }
     func setUpColorButton(colorNote: String){
