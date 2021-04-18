@@ -6,15 +6,14 @@
 //
 import Foundation
 import UIKit
+
 extension HomeViewController{
     func setUpNavigationController(){
         title = "Note"
-        //add searchBar in navigationController
-        
         //add right bar button item (add new note)
         let addBarButton = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(goToAddNewNote(sender:)))
         navigationItem.rightBarButtonItem = addBarButton
-        //add lrft bar button item (show side menu)
+        //add left bar button item (show side menu)
         let showMenuBarButton = UIBarButtonItem(image: UIImage(systemName: "text.justify"), style: .plain, target: self, action: #selector(showSideMenu(sender:)))
         navigationItem.leftBarButtonItem = showMenuBarButton
     }
@@ -22,6 +21,6 @@ extension HomeViewController{
         self.goToByNavigate(storyboardName: "AddNote", viewControllerName: AddNoteViewController.self)
     }
     @objc func showSideMenu(sender: UIBarButtonItem){
-        
+        present(menu!, animated: true, completion: nil)
     }
 }

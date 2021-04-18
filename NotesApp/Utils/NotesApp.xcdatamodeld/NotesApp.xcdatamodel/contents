@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="FavoriteModel" representedClassName="FavoriteModel" syncable="YES">
+        <attribute name="body" optional="YES" attributeType="String"/>
+        <attribute name="color" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="NoteModel" representedClassName="NoteModel" syncable="YES">
         <attribute name="bodyNote" optional="YES" attributeType="String"/>
         <attribute name="colorNote" optional="YES" attributeType="String"/>
@@ -7,6 +13,7 @@
         <attribute name="titleNote" optional="YES" attributeType="String"/>
     </entity>
     <elements>
+        <element name="FavoriteModel" positionX="-63" positionY="9" width="128" height="103"/>
         <element name="NoteModel" positionX="-63" positionY="-18" width="128" height="103"/>
     </elements>
 </model>

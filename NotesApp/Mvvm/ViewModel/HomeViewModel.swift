@@ -32,4 +32,24 @@ class HomeViewModel{
             print("error in searchOnTableView Function:", error.localizedDescription)
         }
     }
+    func checkPasswordForNotes(compaltion: @escaping (String?)-> Void){
+        if let password = UserDefaults.standard.object(forKey: "PasswordNote"){
+            compaltion(password as? String)
+        }else{
+            compaltion(nil)
+        }
+    }
+    func addToFavorite(titleNote: String,bodyNote: String,colorNote: String,dateNote: String, complation: @escaping(Bool)-> Void){
+        let note = FavoriteModel(context: context)
+        note.title = titleNote
+        note.body = bodyNote
+        note.color = colorNote
+        note.date = dateNote
+        do {
+            try context.save()
+            complation(true)
+        } catch{
+            complation(false)
+        }
+    }
 }

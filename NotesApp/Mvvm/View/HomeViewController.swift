@@ -6,6 +6,7 @@
 //
 import UIKit
 import CoreData
+import SideMenu
 
 class HomeViewController: UIViewController {
     
@@ -14,15 +15,17 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var notesTableView: UITableView!
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var arrOfNotes = [NoteModel]()
+    var menu: SideMenuNavigationController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpNavigationController()
         setUpTabelView()
+        listenToPassword()
         searchBar.searchResultsUpdater = self
         searchBar.searchBar.delegate = self
         navigationItem.searchController = searchBar
-        
+        setUpMenu()
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidLoad()
@@ -43,6 +46,31 @@ class HomeViewController: UIViewController {
                 self.notesTableView.reloadData()
             }
         }
+    }
+    func listenToPassword(){
+        homeViewModel.checkPasswordForNotes { (password) in
+            if let password = password{
+                self.showAlertWithTextField(title: "Enter your password", messege: "put your password for show your notes", placeHolderOne: "put password") { (pass) in
+                    if pass == password{
+                        print("okokokokokokok")
+                    }else{
+                        print("nononononononoon")
+                        let alert = UIAlertController(title: "Password in worng!!", message: "", preferredStyle: .alert)
+                        let reEnterPasswordButton = UIAlertAction(title: "ReEnter Password", style: .cancel) { (action) in
+                            self.listenToPassword()
+                        }
+                        alert.addAction(reEnterPasswordButton)
+                        self.present(alert, animated: true, completion: nil)
+                    }
+                }
+            }
+        }
+    }
+    func setUpMenu(){
+        menu = SideMenuNavigationController(rootViewController: SideMenuTableViewController())
+        SideMenuManager.default.leftMenuNavigationController = menu
+        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
+        menu?.leftSide = true
     }
 }
 extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
@@ -98,7 +126,20 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
         }
         delete.image = UIImage(systemName: "trash")
         let addToFav = UIContextualAction(style: .normal, title: "add to favourite") { (_, _, _) in
-            print("add to fav")
+            
+            let noteSelected = self.arrOfNotes[indexPath.row]
+            guard let title = noteSelected.titleNote, let body = noteSelected.bodyNote, let color = noteSelected.colorNote, let date = noteSelected.dateNote else {return}
+            self.homeViewModel.addToFavorite(titleNote: title, bodyNote: body, colorNote: color, dateNote: date) { (isSccuss) in
+                if isSccuss{
+                    print("Add to fav")
+                    self.homeViewModel.deleteNote(noteSelected: noteSelected) { (deleteSuccess) in
+                        if deleteSuccess{
+                            self.fetchData()
+                            self.notesTableView.reloadData()
+                        }
+                    }
+                }
+            }
         }
         addToFav.image = UIImage(systemName: "heart")
         return UISwipeActionsConfiguration(actions: [delete,addToFav])

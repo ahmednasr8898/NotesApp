@@ -20,7 +20,7 @@
                         <rect key="frame" x="8" y="8" width="406" height="74"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHc-MH-EnK">
-                                <rect key="frame" x="8" y="26.5" width="203" height="21"/>
+                                <rect key="frame" x="12" y="16.5" width="203" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -36,10 +36,10 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="mvv-MI-EL6" secondAttribute="trailing" constant="8" id="1xa-B6-DSS"/>
                             <constraint firstItem="mvv-MI-EL6" firstAttribute="width" secondItem="esn-lC-z8z" secondAttribute="width" multiplier="0.4" id="3mu-du-FGy"/>
-                            <constraint firstItem="FHc-MH-EnK" firstAttribute="leading" secondItem="esn-lC-z8z" secondAttribute="leading" constant="8" id="PKh-Rl-O5l"/>
+                            <constraint firstItem="FHc-MH-EnK" firstAttribute="leading" secondItem="esn-lC-z8z" secondAttribute="leading" constant="12" id="PKh-Rl-O5l"/>
                             <constraint firstAttribute="bottom" secondItem="mvv-MI-EL6" secondAttribute="bottom" constant="8" id="ZNL-Hf-N1m"/>
                             <constraint firstItem="FHc-MH-EnK" firstAttribute="width" secondItem="esn-lC-z8z" secondAttribute="width" multiplier="0.5" id="gqY-87-l7y"/>
-                            <constraint firstItem="FHc-MH-EnK" firstAttribute="centerY" secondItem="esn-lC-z8z" secondAttribute="centerY" id="sXy-tM-c8P"/>
+                            <constraint firstItem="FHc-MH-EnK" firstAttribute="centerY" secondItem="esn-lC-z8z" secondAttribute="centerY" constant="-10" id="sXy-tM-c8P"/>
                         </constraints>
                     </view>
                 </subviews>

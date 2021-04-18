@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,6 +27,17 @@
 		79510DEF25B2681500A45A2E /* HomeViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79510DEE25B2681500A45A2E /* HomeViewController+extension.swift */; };
 		79510DF425B26C2B00A45A2E /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79510DF225B26C2B00A45A2E /* NotesTableViewCell.swift */; };
 		79510DF525B26C2B00A45A2E /* NotesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79510DF325B26C2B00A45A2E /* NotesTableViewCell.xib */; };
+		798F4C5A25C03F9B0013DCC2 /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 798F4C5925C03F9B0013DCC2 /* SideMenu.storyboard */; };
+		798F4C5D25C040170013DCC2 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F4C5C25C040170013DCC2 /* SideMenuTableViewController.swift */; };
+		798F4C6225C040940013DCC2 /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F4C6025C040940013DCC2 /* BasicTableViewCell.swift */; };
+		798F4C6325C040940013DCC2 /* BasicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 798F4C6125C040940013DCC2 /* BasicTableViewCell.xib */; };
+		798F4C6725C041310013DCC2 /* AdvancedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F4C6525C041310013DCC2 /* AdvancedTableViewCell.swift */; };
+		798F4C6825C041310013DCC2 /* AdvancedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 798F4C6625C041310013DCC2 /* AdvancedTableViewCell.xib */; };
+		798F4C9725C068390013DCC2 /* FavoriteModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F4C9525C068390013DCC2 /* FavoriteModel+CoreDataClass.swift */; };
+		798F4C9825C068390013DCC2 /* FavoriteModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F4C9625C068390013DCC2 /* FavoriteModel+CoreDataProperties.swift */; };
+		798F4C9B25C068640013DCC2 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F4C9A25C068640013DCC2 /* FavoritesViewController.swift */; };
+		798F4C9E25C0688A0013DCC2 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 798F4C9D25C0688A0013DCC2 /* Favorites.storyboard */; };
+		798F4CA125C06BE90013DCC2 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F4CA025C06BE90013DCC2 /* FavoritesViewModel.swift */; };
 		9F4F08675B18E5787F629114 /* Pods_NotesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB8E44E75E185C21976890A /* Pods_NotesApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +64,17 @@
 		79510DEE25B2681500A45A2E /* HomeViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+extension.swift"; sourceTree = "<group>"; };
 		79510DF225B26C2B00A45A2E /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
 		79510DF325B26C2B00A45A2E /* NotesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesTableViewCell.xib; sourceTree = "<group>"; };
+		798F4C5925C03F9B0013DCC2 /* SideMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SideMenu.storyboard; sourceTree = "<group>"; };
+		798F4C5C25C040170013DCC2 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
+		798F4C6025C040940013DCC2 /* BasicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableViewCell.swift; sourceTree = "<group>"; };
+		798F4C6125C040940013DCC2 /* BasicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicTableViewCell.xib; sourceTree = "<group>"; };
+		798F4C6525C041310013DCC2 /* AdvancedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedTableViewCell.swift; sourceTree = "<group>"; };
+		798F4C6625C041310013DCC2 /* AdvancedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvancedTableViewCell.xib; sourceTree = "<group>"; };
+		798F4C9525C068390013DCC2 /* FavoriteModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		798F4C9625C068390013DCC2 /* FavoriteModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		798F4C9A25C068640013DCC2 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		798F4C9D25C0688A0013DCC2 /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
+		798F4CA025C06BE90013DCC2 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		8DB8E44E75E185C21976890A /* Pods_NotesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE4CC1EB29A9E211AAB7AD1 /* Pods-NotesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesApp.debug.xcconfig"; path = "Target Support Files/Pods-NotesApp/Pods-NotesApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ECD236348399FCFFB70FF97F /* Pods-NotesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesApp.release.xcconfig"; path = "Target Support Files/Pods-NotesApp/Pods-NotesApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				798CCAAF25B8F06C0068F686 /* Mvvm */,
+				798F4C5825C03F690013DCC2 /* SideMenu */,
 				798CCAB425B8F13D0068F686 /* Storyboard */,
 				798CCAB525B8F16C0068F686 /* Cells */,
 				79510DC025B2392000A45A2E /* Extension */,
@@ -153,6 +176,7 @@
 			children = (
 				79510DE525B255CD00A45A2E /* AddNoteViewModel.swift */,
 				79510DEA25B2663D00A45A2E /* HomeViewModel.swift */,
+				798F4CA025C06BE90013DCC2 /* FavoritesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -165,6 +189,7 @@
 				79510DBA25B2340E00A45A2E /* AddNoteViewController.swift */,
 				79510DBD25B235D500A45A2E /* AddNoteViewController+extension.swift */,
 				79510DCA25B2419000A45A2E /* ChooseColorViewController.swift */,
+				798F4C9A25C068640013DCC2 /* FavoritesViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,6 +197,8 @@
 		798CCAB225B8F0800068F686 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				798F4C9525C068390013DCC2 /* FavoriteModel+CoreDataClass.swift */,
+				798F4C9625C068390013DCC2 /* FavoriteModel+CoreDataProperties.swift */,
 				79510DE025B2557F00A45A2E /* NoteModel+CoreDataProperties copy.swift */,
 				79510DDF25B2557E00A45A2E /* NoteModel+CoreDataClass copy.swift */,
 			);
@@ -184,6 +211,7 @@
 				79510D9325B231FF00A45A2E /* Main.storyboard */,
 				79510DB725B233F600A45A2E /* AddNote.storyboard */,
 				79510DCE25B241AA00A45A2E /* ChooseColor.storyboard */,
+				798F4C9D25C0688A0013DCC2 /* Favorites.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -203,6 +231,43 @@
 				79510DF225B26C2B00A45A2E /* NotesTableViewCell.swift */,
 			);
 			path = HomeCell;
+			sourceTree = "<group>";
+		};
+		798F4C5825C03F690013DCC2 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				798F4C6B25C0414C0013DCC2 /* MenuController */,
+				798F4C6A25C041380013DCC2 /* AdvancedCell */,
+				798F4C5F25C0405F0013DCC2 /* BasicCell */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		798F4C5F25C0405F0013DCC2 /* BasicCell */ = {
+			isa = PBXGroup;
+			children = (
+				798F4C6025C040940013DCC2 /* BasicTableViewCell.swift */,
+				798F4C6125C040940013DCC2 /* BasicTableViewCell.xib */,
+			);
+			path = BasicCell;
+			sourceTree = "<group>";
+		};
+		798F4C6A25C041380013DCC2 /* AdvancedCell */ = {
+			isa = PBXGroup;
+			children = (
+				798F4C6525C041310013DCC2 /* AdvancedTableViewCell.swift */,
+				798F4C6625C041310013DCC2 /* AdvancedTableViewCell.xib */,
+			);
+			path = AdvancedCell;
+			sourceTree = "<group>";
+		};
+		798F4C6B25C0414C0013DCC2 /* MenuController */ = {
+			isa = PBXGroup;
+			children = (
+				798F4C5925C03F9B0013DCC2 /* SideMenu.storyboard */,
+				798F4C5C25C040170013DCC2 /* SideMenuTableViewController.swift */,
+			);
+			path = MenuController;
 			sourceTree = "<group>";
 		};
 		CDA2A4495519ECE0CB8A1785 /* Frameworks */ = {
@@ -272,12 +337,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				798F4C6825C041310013DCC2 /* AdvancedTableViewCell.xib in Resources */,
 				79510DB825B233F600A45A2E /* AddNote.storyboard in Resources */,
 				79510D9D25B2320100A45A2E /* LaunchScreen.storyboard in Resources */,
 				79510D9A25B2320100A45A2E /* Assets.xcassets in Resources */,
 				79510DCF25B241AA00A45A2E /* ChooseColor.storyboard in Resources */,
+				798F4C6325C040940013DCC2 /* BasicTableViewCell.xib in Resources */,
+				798F4C9E25C0688A0013DCC2 /* Favorites.storyboard in Resources */,
 				79510D9525B231FF00A45A2E /* Main.storyboard in Resources */,
 				79510DF525B26C2B00A45A2E /* NotesTableViewCell.xib in Resources */,
+				798F4C5A25C03F9B0013DCC2 /* SideMenu.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,16 +403,23 @@
 				79510DCB25B2419000A45A2E /* ChooseColorViewController.swift in Sources */,
 				79510D8E25B231FF00A45A2E /* AppDelegate.swift in Sources */,
 				79510DE225B2557F00A45A2E /* NoteModel+CoreDataProperties copy.swift in Sources */,
+				798F4C5D25C040170013DCC2 /* SideMenuTableViewController.swift in Sources */,
+				798F4C9825C068390013DCC2 /* FavoriteModel+CoreDataProperties.swift in Sources */,
 				79510DC225B2394000A45A2E /* UIViewController+extension.swift in Sources */,
 				79510DF425B26C2B00A45A2E /* NotesTableViewCell.swift in Sources */,
 				79510DBE25B235D500A45A2E /* AddNoteViewController+extension.swift in Sources */,
+				798F4C6225C040940013DCC2 /* BasicTableViewCell.swift in Sources */,
 				79510D9025B231FF00A45A2E /* SceneDelegate.swift in Sources */,
 				79510DEF25B2681500A45A2E /* HomeViewController+extension.swift in Sources */,
+				798F4CA125C06BE90013DCC2 /* FavoritesViewModel.swift in Sources */,
 				79510DEB25B2663D00A45A2E /* HomeViewModel.swift in Sources */,
 				79510DBB25B2340E00A45A2E /* AddNoteViewController.swift in Sources */,
 				79510D9825B231FF00A45A2E /* NotesApp.xcdatamodeld in Sources */,
+				798F4C9B25C068640013DCC2 /* FavoritesViewController.swift in Sources */,
+				798F4C9725C068390013DCC2 /* FavoriteModel+CoreDataClass.swift in Sources */,
 				79510DE125B2557F00A45A2E /* NoteModel+CoreDataClass copy.swift in Sources */,
 				79510DE625B255CD00A45A2E /* AddNoteViewModel.swift in Sources */,
+				798F4C6725C041310013DCC2 /* AdvancedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

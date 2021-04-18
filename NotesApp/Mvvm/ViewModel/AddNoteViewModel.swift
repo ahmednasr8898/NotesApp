@@ -30,11 +30,32 @@ class AddNoteViewModel {
             complation(false)
         }
     }
+    func deleteNoteFav(noteSelected: FavoriteModel, complation: @escaping(Bool)-> Void){
+        context.delete(noteSelected)
+        do{
+            try context.save()
+            complation(true)
+        }catch{
+            complation(false)
+        }
+    }
     func editNote(selectedNote: NoteModel ,titleNote: String,bodyNote: String,colorNote: String,dateNote: String, complation: @escaping(Bool)-> Void){
         selectedNote.titleNote = titleNote
         selectedNote.bodyNote = bodyNote
         selectedNote.colorNote = colorNote
         selectedNote.dateNote = dateNote
+        do {
+            try context.save()
+            complation(true)
+        } catch{
+            complation(false)
+        }
+    }
+    func editNoteInFav(selectedNote: FavoriteModel ,titleNote: String,bodyNote: String,colorNote: String,dateNote: String, complation: @escaping(Bool)-> Void){
+        selectedNote.title = titleNote
+        selectedNote.body = bodyNote
+        selectedNote.color = colorNote
+        selectedNote.date = dateNote
         do {
             try context.save()
             complation(true)
