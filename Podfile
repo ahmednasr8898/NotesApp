@@ -6,4 +6,5 @@ target 'NotesApp' do
   use_frameworks!
   # Pods for NotesApp
   pod 'SideMenu'
+  pod 'Toast-Swift', '~> 5.0.1'
 end

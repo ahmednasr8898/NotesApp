@@ -7,6 +7,7 @@
 import UIKit
 import CoreData
 import SideMenu
+import Toast_Swift
 
 class HomeViewController: UIViewController {
     
@@ -52,9 +53,9 @@ class HomeViewController: UIViewController {
             if let password = password{
                 self.showAlertWithTextField(title: "Enter your password", messege: "put your password for show your notes", placeHolderOne: "put password") { (pass) in
                     if pass == password{
-                        print("okokokokokokok")
+                        print("password is correct")
                     }else{
-                        print("nononononononoon")
+                        print("password is worng!!!")
                         let alert = UIAlertController(title: "Password in worng!!", message: "", preferredStyle: .alert)
                         let reEnterPasswordButton = UIAlertAction(title: "ReEnter Password", style: .cancel) { (action) in
                             self.listenToPassword()
@@ -117,9 +118,11 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
             let noteSelected = self.arrOfNotes[indexPath.row]
             self.homeViewModel.deleteNote(noteSelected: noteSelected) { (isSuccess) in
                 if isSuccess{
-                    print("success delete")
+                    print("delete this note")
+                    self.view.makeToast("delete this note")
                 }else{
-                    print("Error when delete item: ")
+                    print("can't delete this note")
+                    self.view.makeToast("can't delete this note")
                 }
             }
             self.fetchData()
@@ -131,7 +134,8 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
             guard let title = noteSelected.titleNote, let body = noteSelected.bodyNote, let color = noteSelected.colorNote, let date = noteSelected.dateNote else {return}
             self.homeViewModel.addToFavorite(titleNote: title, bodyNote: body, colorNote: color, dateNote: date) { (isSccuss) in
                 if isSccuss{
-                    print("Add to fav")
+                    print("add note to favorite")
+                    self.view.makeToast("add note to favorite")
                     self.homeViewModel.deleteNote(noteSelected: noteSelected) { (deleteSuccess) in
                         if deleteSuccess{
                             self.fetchData()

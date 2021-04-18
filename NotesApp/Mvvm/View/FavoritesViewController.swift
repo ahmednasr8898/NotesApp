@@ -5,6 +5,7 @@
 //  Created by Ahmed Nasr on 1/26/21.
 //
 import UIKit
+import Toast_Swift
 
 class FavoritesViewController: UIViewController {
 
@@ -82,9 +83,11 @@ extension FavoritesViewController: UITableViewDelegate,UITableViewDataSource{
             let noteSelected = self.arrOfNotes[indexPath.row]
             self.favoritesViewModel.deleteNote(noteSelected: noteSelected) { (isSuccess) in
                 if isSuccess{
-                    print("success delete")
+                    print("delete this note")
+                    self.view.makeToast("delete this note")
                 }else{
                     print("Error when delete item: ")
+                    self.view.makeToast("can't delete this note")
                 }
             }
             self.fetchData()
@@ -96,7 +99,8 @@ extension FavoritesViewController: UITableViewDelegate,UITableViewDataSource{
             guard let title = noteSelected.title, let body = noteSelected.body, let color = noteSelected.color, let date = noteSelected.date else {return}
             self.favoritesViewModel.backToHome(titleNote: title, bodyNote: body, colorNote: color, dateNote: date) { (isSuccess) in
                 if isSuccess{
-                    print("back to home")
+                    print("back note to home")
+                    self.view.makeToast("back note to home")
                     self.favoritesViewModel.deleteNote(noteSelected: noteSelected) { (deleteSuccess) in
                         if deleteSuccess{
                             self.fetchData()

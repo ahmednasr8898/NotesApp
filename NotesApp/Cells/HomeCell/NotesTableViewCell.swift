@@ -18,7 +18,7 @@ class NotesTableViewCell: UITableViewCell {
         itemView.layer.cornerRadius = 20.0
         itemView.layer.shadowColor = UIColor.gray.cgColor
         itemView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-        itemView.layer.shadowRadius = 12.0
+        itemView.layer.shadowRadius = 6.0
         itemView.layer.shadowOpacity = 0.7
     }
 }

@@ -5,6 +5,7 @@
 //  Created by Ahmed Nasr on 1/15/21.
 //
 import UIKit
+import Toast_Swift
 
 class AddNoteViewController: UIViewController {
 
@@ -67,16 +68,9 @@ class AddNoteViewController: UIViewController {
         navigationItem.setRightBarButtonItems([deleteBarButton,addNewNoteButton,chooseButton], animated: true)
     }
     @objc func deleteSelctedNoteOnClick(){
-        if checkIsEnabelToEditInFav{
-            addNewNoteViewModel.deleteNoteFav(noteSelected: selectNoteFav) { (deleteNote) in
-                if deleteNote{
-                    print("delete this note")
-                    self.navigationController?.popToRootViewController(animated: true)
-                }
-            }
-        }
         addNewNoteViewModel.deleteNote(noteSelected: selectNote) { (isSuccessDelete) in
             print("delete this note")
+            self.view.makeToast("delete this note")
             self.navigationController?.popViewController(animated: true)
         }
     }
@@ -112,11 +106,13 @@ class AddNoteViewController: UIViewController {
         let date = getCurrentDate()
         addNewNoteViewModel.saveNote(titleNote: title ?? "", bodyNote: body ?? "", colorNote: color , dateNote: date ) { (isSaved) in
             if isSaved{
-                print("Success to save new note")
+                print("success to save new note")
+                self.view.makeToast("success to save new note")
                 self.titleTextField.text = " "
                 self.bodyTextView.text = " "
             }else{
-                print("error when save new note")
+                print("can't save new note")
+                self.view.makeToast("can't save new note")
             }
         }
     }
@@ -127,9 +123,11 @@ class AddNoteViewController: UIViewController {
         let date = getCurrentDate()
         addNewNoteViewModel.editNote(selectedNote: selectNote, titleNote: title ?? "", bodyNote: body ?? "", colorNote: color, dateNote: date) { (isEdit) in
             if isEdit{
-                print("Success to edit note")
+                print("success to edit note")
+                self.view.makeToast("success to edit note")
             }else{
-                print("error when edit note")
+                print("can't edit note")
+                self.view.makeToast("can't edit note")
             }
         }
     }
@@ -140,9 +138,11 @@ class AddNoteViewController: UIViewController {
         let date = getCurrentDate()
         addNewNoteViewModel.editNoteInFav(selectedNote: selectNoteFav, titleNote: title ?? "", bodyNote: body ?? "", colorNote: color, dateNote: date) { (isEdit) in
             if isEdit{
-                print("Success to edit note Fav")
+                print("success to edit note fav")
+                self.view.makeToast("success to edit note")
             }else{
-                print("error when edit note Fav")
+                print("can't edit note fav")
+                self.view.makeToast("can't edit note")
             }
         }
     }
